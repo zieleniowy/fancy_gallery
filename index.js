@@ -44,7 +44,7 @@ function ControlledGallery(props) {
       clipPath: props.getClipPath(n, count, props.active)
     }
   }, props.noClone ? child : /*#__PURE__*/_react.default.cloneElement(child, { ...child.props,
-    active: n === props.active
+    active: props.active
   }))));
 }
 
