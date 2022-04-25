@@ -40,7 +40,7 @@ function ControlledGallery(props) {
   }, _react.default.Children.map(props.children, (child, n) => /*#__PURE__*/_react.default.createElement("div", {
     onMouseEnter: () => props.onChange(n),
     className: styles.child,
-    style: { ...style.child,
+    style: { ...styles.child,
       clipPath: props.getClipPath(n, count, props.active)
     }
   }, props.noClone ? child : /*#__PURE__*/_react.default.cloneElement(child, { ...child.props,
